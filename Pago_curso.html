@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link rel="stylesheet" href="Css/Pago_curso.css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+   
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+        
+        <img src="img/Logo-ccnn-2019.jpg" class="img-fluid_imagen">
+     <!-- <a href="#!">Logo</a>-->
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">¿Quiénes somos?</a>
+        </li>
+        <li>
+          <a href="#!">Aprende inglés</a>
+        </li>
+        <li>
+          <a href="#!">Servicios</a>
+        </li>
+        <li>
+          <a href="#!">Cultura & Eventos</a>
+        </li>
+        <li>
+          <a href="#!">Noticias</a>
+        </li>
+        <li>
+          <a href="#!">Contacto</a>
+        </li>
+        <li>
+          <a href="#!">Mi Cuenta</a> 
+          <ul class="nav-dropdown">
+            <li>
+              <a href="Miscursos.html">Mis cursos</a>
+            </li>
+            <li>
+              <!--<img src="img/Logo-ccnn-2019.jpg">-->
+            </li>
+            <li>
+              <a href="index.html">Salir</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+    <div class="container-md inicio">
+      <div class="container">
+        <h5>Aprende inglés con nosotros</h5>
+        <div class="mx-auto imgcurso"></div>
+     <!--   <img src="img/library.svg"  class="rounded mx-auto d-block">-->
+      </div>
+    </div>
+
+    <div class="container-lg text-center tituloh3">
+     <h3>Elija una modalidad</h3>
+    </div>
+    
+    <div class="cntr">
+      <label for="opt1" class="radio">
+        <input type="radio" name="rdo" id="opt1" class="hidden"/>
+        <span class="label"></span>Regular
+      </label>
+      
+      <label for="opt2" class="radio">
+        <input type="radio" name="rdo" id="opt2" class="hidden"/>
+        <span class="label"></span>Sabatino
+      </label>
+      
+      <label for="opt3" class="radio">
+        <input type="radio" name="rdo" id="opt3" class="hidden"/>
+        <span class="label"></span>Dominical
+      </label>
+    </div>
+
+    <div class="wrapper">
+      <div class="divider div-transparent div-dot"></div>
+    </div>
+
+    <div class="container-lg text-center tituloh3_2">
+      <h3>Elija un horario</h3>
+     </div>
+
+     <div class="fila">
+      <div class="column">
+        <div class="card">
+          <h3>8:10 AM</h3>
+          <p>Docente:<p>xxxx xxxx</p></p>
+          <p>Cupos disponibles:<p>xxxx</p></p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <h3>10:00 - 12:00 PM</h3>
+          <p>Docente:<p>xxxx xxxx</p></p>
+          <p>Cupos disponibles:<p>xxxx</p></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>2:00 - 4:00 PM</h3>
+          <p>Docente:<p>xxxx xxxx</p></p>
+          <p>Cupos disponibles:<p>xxxx</p></p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>4:00 - 6:00 PM</h3>
+          <p>Docente:<p>xxxx xxxx</p></p>
+          <p>Cupos disponibles:<p>xxxx</p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h3>6:00 - 8:00 PM</h3>
+          <p>Docente:<p>xxxx xxxx</p></p>
+          <p>Cupos disponibles:<p>xxxx</p></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="wrapper">
+      <div class="divider div-transparent div-dot divider2"></div>
+    </div>
+    <!----PAGO-->
+    <div class="form_wrapper">
+      <form>
+        <h1 class="text-center" style="padding-bottom:15px;" >Detalles del pago</h1>
+        <img class="rounded mx-auto d-block" src="img/pago.png">
+        <br>
+        <div class="form-group">
+            <label>Número de tarjeta de credito</label>
+            <input type="text" class="form-control">
+         
+        </div>
+       
+        <p class="fec">Fecha de nacimiento</p>
+        <div class="form-row">
+          
+          <div class="form-group col-md-4">
+            <label for="inputdia">Día de expiración</label>
+           <!-- <input type="text" class="form-control" id="inputCity">-->
+            <select class="form-control">
+              <option hidden>dd...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>...</option>
+            </select>
+          </div>
+    
+          <div class="form-group col-md-4">
+            <label>Mes de expiración</label>
+            <select class="form-control">
+              <option hidden>mm...</option>
+              <option>Enero</option>
+              <option>Febrero</option>
+              <option>...</option>
+            </select>
+          </div>
+    
+          <div class="form-group col-md-4">
+            <label>CCV</label>
+            <input type="text" class="form-control" id="inputtext" placeholder="CCV">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Recordarme
+            </label>
+          </div>
+        </div>
+      </form>
+    <input class="button" type="submit" id="btnpagar" data-toggle="modal" data-target="#myModal-success" value="Pagar ahora"/>
+     
+    </div>
+   
+    <!-- Modal 
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>-->
+
+
+    <!--Modal success-->
+    <div id="myModal-success" class="modal fade">
+      <div class="modal-dialog modal-confirm">
+          <div class="modal-content">
+              <div class="modal-header-success">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="icon-box-success">
+                      <img src="img/tick.svg" alt="">
+                  </div>
+                  
+              </div>
+              <div class="modal-body text-center">
+                  <h4>¡Se ha registrado la compra!</h4>
+                  <p>Puede ver los cursos que lleva en su cuenta</p>
+                  
+                  <button class="btn btncontinuar" id="btn-continuar" data-dismiss="modal">
+                      <span>Continuar</span>           
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+     
+    
+  
+    
+    <script src="JavaScript/jquery-1.10.2.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="JavaScript/index.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="JavaScript/modal.js"></script>
+
+</body>
+</html>

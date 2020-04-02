@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link rel="stylesheet" href="Css/Miscursos.css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+   
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+        
+        <img src="img/Logo-ccnn-2019.jpg" class="img-fluid_imagen">
+     <!-- <a href="#!">Logo</a>-->
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">¿Quiénes somos?</a>
+        </li>
+        <li>
+          <a href="#!">Aprende inglés</a>
+        </li>
+        <li>
+          <a href="#!">Servicios</a>
+        </li>
+        <li>
+          <a href="#!">Cultura & Eventos</a>
+        </li>
+        <li>
+          <a href="#!">Noticias</a>
+        </li>
+        <li>
+          <a href="#!">Contacto</a>
+        </li>
+        <li>
+          <a href="#!">Mi Cuenta</a> 
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Mis cursos</a>
+            </li>
+            <li>
+              <!--<img src="img/Logo-ccnn-2019.jpg">-->
+            </li>
+            <li>
+              <a href="index.html">Salir</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+
+    <div class="container-md inicio">
+      <div class="container">
+        <h5>Mis cursos</h5>
+        
+        <div class="mx-auto imgcurso"></div>
+     <!--   <img src="img/library.svg"  class="rounded mx-auto d-block">-->
+      </div>
+    </div>
+
+    <div class="form_wrapper">
+      <form>
+        <h1 class="text-center" style="padding-bottom:15px;" >Mi información</h1>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+           
+            <label>Nombres</label>
+            <input type="text" class="form-control" id="inputtext" placeholder="Francisco">
+          </div>
+          <div class="form-group col-md-6">
+            <label>Apellidos</label>
+            <input type="text" class="form-control" id="inputtext2" placeholder="Reyes" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress" >Email</label>
+          <input type="email" class="form-control" id="inputAddress" placeholder="abc@ejemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Teléfono</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="8888-8888">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Dirección</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Barrio...">
+        </div>
+        <p class="fec">Fecha de nacimiento</p>
+        <div class="form-row">
+          
+          <div class="form-group col-md-4">
+            <label for="inputdia">Día</label>
+           <!-- <input type="text" class="form-control" id="inputCity">-->
+            <select id="inputState" class="form-control">
+              <option hidden>dd...</option>
+              <option selected >1</option>
+              <option>2</option>
+              <option>...</option>
+            </select>
+          </div>
+    
+          <div class="form-group col-md-4">
+            <label>Mes</label>
+            <select id="inputmes" class="form-control">
+              <option hidden>mm...</option>
+              <option selected >Enero</option>
+              <option>Febrero</option>
+              <option>...</option>
+            </select>
+          </div>
+    
+          <div class="form-group col-md-4">
+            <label>Año</label>
+            <select id="inputyear" class="form-control">
+              <option hidden>yyyy...</option>
+              <option>1990</option>
+              <option selected >1991</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      
+      </form>
+      <input class="button" data-toggle="modal" data-target="#myModal-success" type="submit" value="Editar perfil"/>
+    </div>
+
+   <!--  <div class="divmiscursos">
+      <div class="mx-auto listacursos">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item list-group-item-dark">Cursos Registrados <span class="pestado">Estado</span></li>
+          <li class="list-group-item">
+            <img src="img/Communicative-EP.png" class="imgcursos"> <span class="titulo" >Communicative English Program</span><input type="checkbox"></li>
+          <li class="list-group-item"><img src="img/Small-Wonders-EP.png" class="imgcursos"> <span class="titulo" >Communicative English Program</span><input type="checkbox"></li></li>
+          <li class="list-group-item"><img src="img/Children-EP.png" class="imgcursos"> <span class="titulo" >Communicative English Program</span><input type="checkbox"></li></li>
+          <li class="list-group-item"><img src="img/Global-Teens-EP.png" class="imgcursos"> <span class="titulo" >Communicative English Program</span><input type="checkbox"></li></li>
+          <li class="list-group-item"><img src="img/TOEFL-Course.jpg" class="imgcursos"> <span class="titulo" >Communicative English Program</span> <input id="checkboxa" class="checkbox" type="checkbox"></li></li>
+        </ul>
+      </div>
+    </div> -->
+  <br><br>
+<!--------------------ACORDEO------------------------------------------------------------------------>
+<div class="container tablas">
+  <table class="table table-condensed"  id="myTable">
+  <thead>
+      <tr>
+          <th>Cursos</th>
+          <th>Fecha de inicio</th>
+          <th>Fecha de finalización</th>
+          <th>Estado</th>
+      </tr>
+  </thead>
+  <tbody class="panel">
+      <tr data-toggle="collapse" data-target="#demo1" data-parent="#myTable">
+          <td>Communicative English Program</td>
+          <td>05-May-2017</td>
+          <td>12-Junio-2018</td>
+          <td class="txtaprove">Aprobado</td>
+        
+      </tr>
+      <tr id="demo1" class="collapse">
+          <td colspan="6" class="hiddenRow text-center accor">
+            <div>Nivel 1</div>
+            <img class="checkimg"src="img/tick.svg">
+            <div>Nivel 2</div>
+            <img class="checkimg"src="img/tick.svg">
+            <div>Nivel 3</div>
+            <img class="checkimg"src="img/tick.svg">
+            <div>Nivel 4</div>
+            <img class="checkimg"src="img/tick.svg">
+            <div>Nivel 5</div>
+            <img class="checkimg"src="img/tick.svg">
+            <div>Nivel 6</div>
+            <img class="checkimg"src="img/tick.svg">
+            <div>Nivel 7</div>
+            <img class="checkimg"src="img/tick.svg">
+            <div>Nivel 8</div>
+      <img class="checkimg"src="img/tick.svg">
+          </td>
+            
+      </tr>
+      <tr data-toggle="collapse" data-target="#demo2" data-parent="#myTable">
+          <td>Small Wonders Program</td>
+          <td>05-May-2017</td>
+          <td>12-Junio-2018</td>
+          <td class="txtaprove">Aprobado</td>
+       
+      </tr>
+      <tr id="demo2" class="collapse">
+        <td colspan="6" class="hiddenRow text-center accor">
+          <div>Nivel 1</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 2</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 3</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 4</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 5</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 6</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 7</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 8</div>
+      <img class="checkimg"src="img/tick.svg">
+        </td>
+      </tr>
+      <tr data-toggle="collapse" data-target="#demo3" data-parent="#myTable">
+          <td>English Children Program</td>
+          <td>05-May-2017</td>
+          <td>12-Junio-2018</td>
+          <td class="txtaprove">Aprobado</td>
+      </tr>
+      <tr id="demo3" class="collapse">
+        <td colspan="6" class="hiddenRow text-center accor">
+          <div>Nivel 1</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 2</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 3</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 4</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 5</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 6</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 7</div>
+          <img class="checkimg"src="img/tick.svg">
+          <div>Nivel 8</div>
+      <img class="checkimg"src="img/tick.svg">
+        </td>
+      </tr>
+      <tr data-toggle="collapse" data-target="#demo4" data-parent="#myTable">
+        <td>Global Teens Program</td>
+        <td>05-May-2017</td>
+        <td>12-Junio-2018</td>
+        <td class="txtaprove">Aprobado</td>
+    </tr>
+    <tr id="demo4" class="collapse">
+      <td colspan="6" class="hiddenRow text-center accor">
+        <div>Nivel 1</div>
+        <img class="checkimg"src="img/tick.svg">
+        <div>Nivel 2</div>
+        <img class="checkimg"src="img/tick.svg">
+        <div>Nivel 3</div>
+        <img class="checkimg"src="img/tick.svg">
+        <div>Nivel 4</div>
+        <img class="checkimg"src="img/tick.svg">
+        <div>Nivel 5</div>
+        <img class="checkimg"src="img/tick.svg">
+        <div>Nivel 6</div>
+        <img class="checkimg"src="img/tick.svg">
+        <div>Nivel 8</div>
+      <img class="checkimg"src="img/tick.svg">
+      </td>
+    </tr>
+
+    <tr data-toggle="collapse" data-target="#demo5" data-parent="#myTable">
+      <td>TOEFL Preparation Course</td>
+      <td>05-May-2017</td>
+      <td>12-Junio-2018</td>
+      <td class="txtaprove">Aprobado</td>
+  </tr>
+  <tr id="demo5" class="collapse">
+    <td colspan="6" class="hiddenRow text-center accor">
+      <div>Único módulo</div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<br><br>
+
+<!--------------------ACORDEO------------------------------------------------------------------------>
+    <div id="myModal-success" class="modal fade">
+      <div class="modal-dialog modal-confirm">
+          <div class="modal-content">
+              <div class="modal-header-success">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="icon-box-success">
+                      <img src="img/tick.svg" alt="">
+                  </div>
+              </div>
+              <div class="modal-body text-center">
+                  <h4>¡Se han guardado los cambios!</h4>
+                  <button class="btn btncontinuar" id="btn-continuar" data-dismiss="modal">
+                      <span>Continuar</span>           
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+    
+    <script src="JavaScript/jquery-1.10.2.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="JavaScript/index.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="JavaScript/modal.js"></script>
+  
+</body>
+</html>

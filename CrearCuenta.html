@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CrearCuenta</title>
+    <link rel="stylesheet" href="Css/CrearCuenta.css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="bg">
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+        
+        <img src="img/Logo-ccnn-2019.jpg" class="img-fluid_imagen">
+     <!-- <a href="#!">Logo</a>-->
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">¿Quiénes somos?</a>
+        </li>
+        <li>
+          <a href="#!">Aprende inglés</a>
+        </li>
+        <li>
+          <a href="#!">Servicios</a>
+        </li>
+        <li>
+          <a href="#!">Cultura & Eventos</a>
+        </li>
+        <li>
+          <a href="#!">Noticias</a>
+        </li>
+        <li>
+          <a href="#!">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<div class="form_wrapper">
+  <form>
+    <h1 class="text-center" style="padding-bottom:15px;" >Crea una cuenta</h1>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+       
+        <label>Nombres</label>
+        <input type="text" class="form-control" id="inputtext">
+      </div>
+      <div class="form-group col-md-6">
+        <label>Apellidos</label>
+        <input type="text" class="form-control" id="inputtext2">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress" >Email</label>
+      <input type="email" class="form-control" id="inputAddress" placeholder="abc@ejemplo.com">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Teléfono</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Dirección</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="">
+    </div>
+    <p class="fec">Fecha de nacimiento</p>
+    <div class="form-row">
+      
+      <div class="form-group col-md-4">
+        <label for="inputdia">Día</label>
+       <!-- <input type="text" class="form-control" id="inputCity">-->
+        <select id="inputState" class="form-control">
+          <option hidden>dd...</option>
+          <option>1</option>
+          <option>2</option>
+          <option>...</option>
+        </select>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label>Mes</label>
+        <select id="inputmes" class="form-control">
+          <option hidden>mm...</option>
+          <option>Enero</option>
+          <option>Febrero</option>
+          <option>...</option>
+        </select>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label>Año</label>
+        <select id="inputyear" class="form-control">
+          <option hidden>yyyy...</option>
+          <option>1990</option>
+          <option>1991</option>
+          <option>...</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Recordarme
+        </label>
+      </div>
+    </div>
+  </form>
+  <input class="button" onclick="okey()" type="submit" value="Crear cuenta"/>
+</div>
+  
+  
+</div>
+    <script src="JavaScript/jquery-1.10.2.js"></script>
+    <script src="JavaScript/index.js"></script>
+
+</body>
+</html>
